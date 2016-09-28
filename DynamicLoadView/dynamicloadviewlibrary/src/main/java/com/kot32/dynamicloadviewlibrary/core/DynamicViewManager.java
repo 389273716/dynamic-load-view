@@ -76,7 +76,11 @@ public class DynamicViewManager {
         String oldViewInfoJson = (String) PreferenceManager.getPreference(KEY_VIEW_VERSION, "");
 
         if (!TextUtils.isEmpty(oldViewInfoJson)) {
-            dynamicInfo = new Gson().fromJson(oldViewInfoJson, DynamicInfo.class);
+            try {
+                dynamicInfo = new Gson().fromJson(oldViewInfoJson, DynamicInfo.class);
+            }catch (Exception e){
+                e.printStackTrace();
+            }
         }
 
         if (dynamicInfo != null) {
