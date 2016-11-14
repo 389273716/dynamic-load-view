@@ -105,4 +105,22 @@ getUpdateInfoApi 这个方法需要传入一个API地址，这个API地址给客
 * 现在可以加载插件程序中的string和drawable 资源，但是style.xml 和 dimens.xml 的加载还存在一些问题。
 * 插件程序中的资源文件的名字最好不要和主程序中重复。
 
+# License
+```
+Copyright 2016 Kot32
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+
 
