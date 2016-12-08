@@ -14,7 +14,7 @@ public class MyApplication extends Application {
         super.onCreate();
         DynamicViewConfig config = new DynamicViewConfig.Builder()
                 .context(this)
-                .getUpdateInfoApi("http://vpscn.ifancc.com/php/dynamicView.php")
+                .getUpdateInfoApi("http://tomatodo.ifancc.com/php/dynamicView.php")
                 .build();
         DynamicViewManager.getInstance(config).init();
     }
