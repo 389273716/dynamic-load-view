@@ -104,6 +104,7 @@ getUpdateInfoApi 这个方法需要传入一个API地址，这个API地址给客
 
 * 现在可以加载插件程序中的string和drawable 资源，但是style.xml 和 dimens.xml 的加载还存在一些问题。
 * 插件程序中的资源文件的名字最好不要和主程序中重复。
+* 在插件中访问资源请使用：getContext().getResources()
 
 # License
 ```
