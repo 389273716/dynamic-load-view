@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.kot32.dynamicloadviewlibrary.core.DynamicViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:uuid="test_activity">
+    android:background="@drawable/tb_bg"
+    >
 
-    <ImageView
+    <com.kot32.dynamicloadviewlibrary.core.DynamicViewGroup
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/ic_launcher" />
+        app:uuid="activity_frame">
 
-</com.kot32.dynamicloadviewlibrary.core.DynamicViewGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原始页面"
+            />
+
+    </com.kot32.dynamicloadviewlibrary.core.DynamicViewGroup>
+
+    <com.kot32.dynamicloadviewlibrary.core.DynamicViewGroup
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:uuid="activity_player">
+
+    </com.kot32.dynamicloadviewlibrary.core.DynamicViewGroup>
+
+
+</RelativeLayout>
+
+
+

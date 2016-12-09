@@ -17,5 +17,12 @@ public class MyApplication extends Application {
                 .getUpdateInfoApi("http://tomatodo.ifancc.com/php/dynamicView.php")
                 .build();
         DynamicViewManager.getInstance(config).init();
+
+        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+            @Override
+            public void uncaughtException(Thread t, Throwable e) {
+                System.out.println(e);
+            }
+        });
     }
 }
