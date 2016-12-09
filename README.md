@@ -103,6 +103,7 @@ you can change those paramter custom.just change the class below:com.kot32.dynam
 
 * For now,Resouce drawble and string can be asses in plugin App, but there still have some trouble in style.xml and dimens.xml
 * The Resource of plugin best don't use the same name with Host's Resource.  
+* If you want to use Bitmap in Plugin,Please use "getContext().getResources()".
 
 # License
 ```
